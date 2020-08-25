@@ -13,10 +13,10 @@
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
-			echo "<h3 align='center' class='alert alert-success'>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h3>";
+			echo "<h3> Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h3>";
 		}
 		else{
-			echo "<h3 align='center' class='alert alert-danger'>Something went wrong! </h3>";
+			echo "<h3>Something went wrong! </h3>";
 		}
 	}
 ?>
