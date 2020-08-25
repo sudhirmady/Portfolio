@@ -1,23 +1,44 @@
 <?php
-	include "bootstrap.php";
+use PHPMailer\PHPMailer\PHPMailer;
 
-	 //variable delaration
-		$Name=$_REQUEST['name'];
-		$Email=$_REQUEST['email'];
-		$Mobile=$_REQUEST['mobile'];
-		$txt=$_REQUEST['message'];
+if(isset($_POST['name'] && isset($_POST['email'])){
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$mobile = $_POST['mobile'];
+	$message = $_POST['message'];
 
-		//check inout field are not empty!
-        if(empty($Name) || empty($Email) || empty($Mobile || empty($txt)))
-        {
-        	echo "<div class='alert alert-danger'>Please fill all input fields </div>";
-        }
-        else
-        {
-        	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$Mobile,"From: $Name <$Email>");
-        	
-        	echo("<div class='alert alert-success'>Your message has been sent successfully :)</div>");
-        }
-		
+	require_once "PHPMailer/PHPMailer.php";
+	require_once "PHPMailer/SMTP.php";
+	require_once "PHPMailer/Exception.php";
+
+	$mail= new PHPMailer();
+
+	$mail->isSMTP();
+	$mail->Host = "smtp.gmail.com";
+	$mail->SMTPAuth = true;
+	$mail->Username="sudheer.madisetty111@gmail.com";
+	$mail->Password="Dad1234@";
+	$mail->Port=465;
+	$mail->SMTPSecure="ssl";
+
+
+	//email setting
+	$mail->isHTML(true);
+	$mail->setFrom($email,$name);
+	$mail->addAddress("sudheer.madisetty111@gmail.com");
+	$mail->Subject = ("$email ($subject");
+	$mail->Body=$body;
+
+	if($mail->send()){
+		$status="success";
+		$response="Email is sent Successfully!";
+	}
+	else
+	{
+		$status="failed";
+		$response= "Something went wrong!: <br>". $mail->ErrorInfo;
+	}
+	exit(json_encode(array("status" => $status, "response"=> $response)));
+}
 
 ?>
