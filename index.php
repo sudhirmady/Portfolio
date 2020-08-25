@@ -282,7 +282,7 @@
                         <h4 class="my-3"> Bootstrap 4</h4>
                         <p class="text-muted">Front End Web UI-tools was mentored by K.Muppala Sir Affiliated to Hong Kong University,China</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 bg-light">
                         <span class="fa-stack fa-4x">
                             <img src="https://internshala.com//static/images/internshala_og_image.jpg" height="80px" width="150px" class="img-responsive img-fluid">
                         </span>
@@ -299,7 +299,7 @@
                 </div> <br> <hr> <br>
                  <hr>
                 <div class="row text-center">
-                  <div class="col-md-4">
+                  <div class="col-md-4 bg-light">
                         <span class="fa-stack fa-4x">
                             <img src="https://cdn.worldvectorlogo.com/logos/coursera.svg" height="80px" width="150px" class="img-responsive img-fluid">
                         </span>
@@ -313,7 +313,7 @@
                         <h4 class="my-3">Building Databases in PHP</h4>
                         <p class="text-muted">This course is the continution of Web Application in PHP. Having the functionality between Databases servers such as Retrieving the data and inserting the data into databases.This course is Provided by Coursera! </p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 bg-light">
                         <span class="fa-stack fa-4x">
                             <img src="https://www.studyexperience.fr/wp-content/uploads/2016/02/MQ_INT_VER_RGB_POS-800x800.png" height="80px" width="150px" class="img-responsive img-fluid">
                         </span>
