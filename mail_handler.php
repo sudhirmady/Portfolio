@@ -6,8 +6,8 @@
 		$txt=$_POST['message'];
 
 		$to='sudheer.madisetty111@gmail.com'; 
-		$subject='Form Submission';
-		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
+		$subject='Portfolio Reply ';
+		$message="Name :".$name."\n"."Phone :".$mobile."\n"."Wrote the following :"."\n\n".$txt;
 		$headers="From: ".$email;
 
 		if(mail($to, $subject, $message, $headers)){
