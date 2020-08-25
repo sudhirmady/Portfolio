@@ -16,8 +16,8 @@
         {
         	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$Mobile,"From: $Name <$Email>");
         	
-        	header("Location:index.php");
-        	echo "<div class='alert alert-success'>Your message has been sent successfully :)</div>";
+        	echo (header("Location:index.php");
+        	 "<div class='alert alert-success'>Your message has been sent successfully :)</div>");
         }
 		
 
