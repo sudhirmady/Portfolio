@@ -15,7 +15,7 @@
         else
         {
         	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$Mobile,"From: $Name <$Email>");
-        	echo "<?php echo $_SERVER['PHP_SELF'];<div class='alert alert-success'>Your message has been sent successfully :)</div> ?>";
+        	echo "<div class='alert alert-success'>Your message has been sent successfully :)</div>";
         }
 		
 
