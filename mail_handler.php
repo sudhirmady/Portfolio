@@ -2,20 +2,20 @@
 	include "bootstrap.php";
 
 	 //variable delaration
-		$name=$_POST['name'];
-		$email=$_POST['email'];
-		$mobile=$_POST['mobile'];
-		$txt=$_POST['message'];
+		$Name=$_REQUEST['name'];
+		$Email=$_REQUEST['email'];
+		$Mobile=$_REQUEST['mobile'];
+		$txt=$_REQUEST['message'];
 
 		//check inout field are not empty!
-        if(empty($name) || empty($email) || empty($mobile || empty($txt)))
+        if(empty($Name) || empty($Email) || empty($Mobile || empty($txt)))
         {
         	echo "<div class='alert alert-danger'>Please fill all input fields </div>";
         }
         else
         {
-        	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$mobile,"From: $name <$email>");
-        	echo "<div class='alert alert-success'>Your message has been sent successfully :)</div>";
+        	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$Mobile,"From: $Name <$Email>");
+        	echo "<?php echo $_SERVER['PHP_SELF'];<div class='alert alert-success'>Your message has been sent successfully :)</div> ?>";
         }
 		
 
