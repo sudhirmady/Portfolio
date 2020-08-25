@@ -370,7 +370,7 @@
                 </div>
 
                
-                <form action="#" method="POST" id="contactForm" class="form" name="form">
+                <form action="insert.php" method="POST" id="contactForm" class="form" name="form">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
