@@ -14,7 +14,7 @@
         }
         else
         {
-        	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$mobile"From: $name <$email>");
+        	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$mobile,"From: $name <$email>");
         	echo "<div class='alert alert-success'>Your message has been sent successfully :)</div>";
         }
 		
