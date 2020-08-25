@@ -395,52 +395,16 @@
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <button onclick="sendEmail()" class="btn btn-primary btn-xl text-uppercase" name="submit" id="sendMessageButton" type="submit">Send Message</button>
+                        <button class="btn btn-primary btn-xl text-uppercase" name="submit" id="sendMessageButton" type="submit">Send Message</button>
 
-                        <h4 class="sent-notification"> </h4>
+                        
                     </div>
                 </form>
             </div>
            <a class="gotopbtn" href="#"> <i class="fas fa-arrow-circle-up fa-lg"></i>  </a> 
         </section>
 
-        <script type="text/javascript">
-          function sendEmail(){
-          	var name= $("#name");
-          	var email=$("#email");
-          	var mobile=$("#phone");
-          	var message=$("#message");
-
-          	if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(mobile) && isNotEmpty(message)){
-          		$.ajax({
-          			url:'mail_handler.php',
-          			method: 'POST',
-          			dataType: 'json';
-          			data:{
-          				name:name.val(),
-          				email:email.val(),
-          				mobile:phone.val(),
-          				message:message.val()
-          			},success:function(response){
-          				$('#myForm')[0].reset();
-          				$('.sent-notification').text("Message sent successfully.");
-          			}
-          		});
-          	}
-          }
-
-          function isNotEmpty(caller){
-          	if(caller.val()==""){
-          		caller.css('border','2px solid red');
-          		return false;
-          	}
-          	else{
-          		caller.css('border','');
-          		return true;
-          	}
-          }
-        </script>
-
+        
 
         <!-- Footer-->
         <footer class="footer py-4 bg-dark">
