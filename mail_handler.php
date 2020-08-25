@@ -1,22 +1,22 @@
 <?php
 	include "bootstrap.php";
 
-	if(isset($_POST['submit'])){
+	 //variable delaration
 		$name=$_POST['name'];
 		$email=$_POST['email'];
 		$mobile=$_POST['mobile'];
 		$txt=$_POST['message'];
 
-		$to='sudheer.madisetty111@gmail.com'; 
-		$subject='Form Submission';
-		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
-		$headers="From: ".$email;
+		//check inout field are not empty!
+        if(empty($name) || empty($email) || empty($mobile || empty($txt)))
+        {
+        	echo "<div class='alert alert-danger'>Please fill all input fields </div>";
+        }
+        else
+        {
+        	mail("sudheer.madisetty111@gmail.com","Portfolio",$txt,$mobile"From: $name <$email>");
+        	echo "<div class='alert alert-success'>Your message has been sent successfully :)</div>";
+        }
+		
 
-		if(mail($to, $subject, $message, $headers)){
-			echo "<h3> Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h3>";
-		}
-		else{
-			echo "<h3>Something went wrong! </h3>";
-		}
-	}
 ?>
