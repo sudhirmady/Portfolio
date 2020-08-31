@@ -382,7 +382,7 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" name="mobile" type="number" placeholder="Enter Your Phone " required="required" data-validation-required-message="Please enter your phone number." />
+                                <input class="form-control" id="phone" name="phone" type="number" placeholder="Enter Your Phone " required="required" data-validation-required-message="Please enter your phone number." />
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>

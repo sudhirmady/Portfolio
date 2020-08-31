@@ -1,53 +1,20 @@
 <?php
+    if(isset($_POST['submit'])){
+        $name=$_POST['name'];
+        $email=$_POST['email'];
+        $phone=$_POST['phone'];
+        $msg=$_POST['message'];
 
-include 'bootstrap.php';
+        $to='sudheer.madisetty111@gmail.com'; 
+        $subject='Sudhir Portfolio';
+        $message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
+        $headers="From: ".$email;
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$mobile = $_POST['mobile'];
-$message = $_POST['message'];
-
-if (!empty($name) || !empty($email) || !empty($mobile) || !empty($message)) {
-    $host = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbname = "register form";
-    //create connection
-    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
-    if (mysqli_connect_error()) {
-     die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
-    } else {
-     $SELECT = "SELECT email From portfolio Where email = ? Limit 1";
-     $INSERT = "INSERT Into portfolio (name, email, mobile, message) values(?, ?, ?, ?)";
-     //Prepare statement
-     $stmt = $conn->prepare($SELECT);
-     $stmt->bind_param("s", $email);
-     $stmt->execute();
-     $stmt->bind_result($email);
-     $stmt->store_result();
-     $rnum = $stmt->num_rows;
-     if ($rnum==0) {
-      $stmt->close();
-      $stmt = $conn->prepare($INSERT);
-      $stmt->bind_param("ssis",$name, $email, $mobile, $message);
-      $stmt->execute();
-      echo "<div class='alert alert-success'>New record inserted sucessfully </div>";
-
-     } else {
-      echo "<div class='alert alert-danger'>Someone already register using this email </div>";
-     }
- 
-     $stmt->close();
-     $conn->close();
-
-
-     
+        if(mail($to, $subject, $message, $headers)){
+            echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
+        }
+        else{
+            echo "Something went wrong!";
+        }
     }
-} else {
- echo "All field are required";
- die();
-}
-     $stmt->close();
-     $conn->close();
- 
 ?>
