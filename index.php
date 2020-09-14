@@ -56,7 +56,7 @@
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-success"></i>
+                            <i class="fas fa-circle fa-stack-2x text-info"></i>
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">E-Commerce</h4>
@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-danger"></i>
+                            <i class="fas fa-circle fa-stack-2x text-success"></i>
                             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Web Security</h4>
@@ -268,7 +268,37 @@
                 </div>
             </div>
         </section>
-        <!-- Clients-->
+
+        <div class="py-5">
+            <div class="container">
+                <h3 align="Center" class="section-heading text-uppercase">My Skills </h3>
+                <h6 align="Center" class="section-subheading text-muted"></h6> <br>
+              <div class="row col-12">
+                <table class="table table-responsive table-bordered table-striped">
+                 <tr style="background-color: #404040;" class="text-light" align="center">
+                    <th> Programming Technologies</th>
+                    <th> Web Technologies </th>
+                    <th> Databases </th>
+                    <th> Graphics </th>
+                    <th> Other </th> 
+                    <th> Mobile Application </th>
+                </tr>
+                <tbody>
+                <tr style="background-color: #3D8FFF;"  id="tableGradient" class="text-light" align="center">
+                    <td>Basic Netbeans Java, C , C++ language, NodeJs and Python </td>
+                    <td> HTML,C.S.S, SCSS, Angular, Wordpress, JavaScript, jQuery, PHP and Bootstrap 4</td>
+                    <td> SQL Server, NoSQL and MySQL </td>
+                    <td> Adobe Photoshop and Coral draw </td>
+                    <td> Cloud Computing , GitHub, A.W.S and Digital Marketing </td>
+                    <td><br> Ionic App </td>
+                </tr>
+               </tbody>
+                </table>
+              </div>
+           </div>
+        </div>
+        <div class="bg-warning"> <hr> </div>
+        
         <div class="py-5">
             <div class="container">
                 <h3 align="Center" class="section-heading text-uppercase">My Certificates</h3>
@@ -326,6 +356,8 @@
             </div>
         </div> <br> <br>
 
+
+
          <section class="page-section bg-warning">
             <div class="container">
                 <div class="text-center">
@@ -366,40 +398,23 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contact Me!</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-light"> Click below to send mail </h3>
+                    
                 </div>
-
                
-                <form action="insert.php" method="POST" id="contactForm" class="form" name="form">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" id="name" name="name" type="text" placeholder="Enter Your Name " required="required" data-validation-required-message="Please enter your name." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="email" name="email" type="email" placeholder="Enter Your Email" required="required" data-validation-required-message="Please enter your email address." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" name="phone" type="number" placeholder="Enter Your Phone " required="required" data-validation-required-message="Please enter your phone number." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" name="submit" id="sendMessageButton" type="submit">Send Message</button>
+               <div class="row">
+               <div class="col-sm-4 col-12">  
+               </div>
 
-                        
-                    </div>
-                </form>
+               <div class="col-sm-4 col-12 justify-content-center">
+                <span class="text-light"> My Email :</span> <a href="mailto:sudheer.madisetty111@gmail.com">sudheer.madisetty111@gmail.com </a>  <br> <br>
+                <span class="text-light"> My Mobile :</span> <a href="tel:+91-9182280101">Click here to Call </a>
+               </div>
+               <div class="col-sm-4 col-12">
+               </div>
+               </div>
+               
+               
             </div>
            <a class="gotopbtn" href="#"> <i class="fas fa-arrow-circle-up fa-lg"></i>  </a> 
         </section>
@@ -415,14 +430,14 @@
                     	<span class="text-light"> Date of Birth :</span> <br><span class="text-warning"> 10th November </span>
                     </div>
                     <div class="col-lg-4 my-3 my-lg-0 text-light">
-                        Copyright © Sudhir Mady 2020
-                    </div>
+                        <br> Copyright © Sudhir Mady 2020 <br> <br>
+                    </div> 
                     <div class="col-lg-4 text-lg-right">
-                        <span class="text-light"> My Email :</span> <a href="mailto:sudheer.madisetty111@gmail.com">sudheer.madisetty111@gmail.com </a> <br> <br>
+                        <span class="text-light"> My NickName :</span> &nbsp;<span class="text-warning">Maddy</span><br> <br>
                         <span class="text-light"> Hometown: </span><br> <span class="text-warning">Guntur, Andhra Pradesh </span>
                     </div>
                 </div>
-            </div> 
+            </div> <br> <br> 
         </footer>
         <!-- Portfolio Modals-->
         <!-- Modal 1-->

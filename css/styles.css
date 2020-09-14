@@ -10534,3 +10534,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   color:#FECF1E;
   font-size:20px;
 }
+
+.DownArrow{
+  color:#3877FE;
+}
+
+#tableGradient{
+  background-image: linear-gradient(to bottom left, #154EC8, #D51698);
+}
